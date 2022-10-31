@@ -3,4 +3,5 @@
 /.vscode
 
 /doctrine_demo/vendor
+/doctrine_demo/include/dbconn.php
 composer.lock
