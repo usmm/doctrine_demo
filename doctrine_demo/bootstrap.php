@@ -38,5 +38,3 @@ require_once 'include/dbconn.php';
 
 // obtaining the entity manager
 $entityManager = EntityManager::create($conn, $config);
-
-var_dump($entityManager);
