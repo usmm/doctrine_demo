@@ -2,4 +2,5 @@
 /.idea
 /.vscode
 
-/vendor
+/doctrine_demo/vendor
+composer.lock
