@@ -1,0 +1,16 @@
+<doctrine-mapping xmlns="https://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="https://doctrine-project.org/schemas/orm/doctrine-mapping
+                          https://www.doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+    <entity name="DemoProject\Entities\Employee" table="swiftx_employee">
+        <id name="id" type="integer" column="id">
+            <generator strategy="AUTO"/>
+        </id>
+        <field name="fio" type="string" unique="true" />
+        <field name="phone" type="integer" unique="true" />
+        <field name="post" type="string" unique="true" />
+        <many-to-one field="office" target-entity="Office">
+            <join-column name="office_id" referenced-column-name="id" />
+        </many-to-one>
+    </entity>
+</doctrine-mapping>
