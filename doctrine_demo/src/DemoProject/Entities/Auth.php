@@ -45,8 +45,8 @@ class Auth
         return $this->last_auth;
     }
 
-    public function setLastAuth(DeteTime $last_auth): void
+    public function setLastAuth(): void
     {
-        $this->last_auth = $last_auth;
+        $this->last_auth = new DateTime();
     }
 }

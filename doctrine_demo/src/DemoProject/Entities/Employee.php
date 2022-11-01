@@ -56,6 +56,7 @@ class Employee
         return $this->office;
     }
 
+    /*TODO mb use office id instead of class*/
     public function setOffice(Office $office): void
     {
         $this->office = $office;
